@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- BunBun Bake Shopping Cart -->
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/rollsData.js"></script>
+    <script defer src="js/Cart.js"></script>
+    <title>BunBun Shopping Cart</title>
+</head>
+
+<body>
+    <div class="bigborder">
+    <div class="shop-header">
+        <div class="shop-header-left">
+            <!-- Store logo--> 
+            <a href="./index.html"><img class ="bunbunlogo" src="assets/logo-01.svg" alt="BunBun shop logo"></a>
+        </div>
+        <div class="shop-header-right">
+            <nav>
+                <!-- Nav bar-->
+                <a class = "navtitle" href = "./index.html"> PRODUCTS </a>
+                <a class = "navtitle" href = "./CartPage.html"> <mark><b> CART </b></mark> </a>
+            </nav>
+            <hr class="line1">
+            <!-- Heading-->
+            <div class="title">
+                Shopping Cart
+            </div>
+        </div>
+    </div>
+
+    <div class="cart">
+        <div id="cartItems">
+    
+            <template id="roll-template">
+                <div class = "flex-cart-row">
+                    <div class = "flex-cart-pic">
+                        <img class="rollpic-cart" src="assets/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll">
+                        <div id="remove">
+                            <b> Remove </b>
+                        </div>
+                    </div>
+                    <br>
+                    <div class = "flex-cart-text">
+                        <div id="rollTitle">
+                        </div>
+                        <div id="glazingType">
+                        </div>
+                        <div id="packSize">
+                        </div>
+                    </div>
+                    <div class = "flex-cart-price">
+                    </div>
+                </div> 
+            </template>
+        </div>
+
+    <div>
+        <hr class = "cart-line">
+    </div>
+    </div>
+    <br> 
+
+    <!-- Total Price -->
+    <div class = "flex-price">
+        <div class = "flex-cart-text">
+            Total 
+        </div>
+        <div id="cartTotalPrice" class = "flex-cart-price">
+        </div>
+    </div>
+    <br><br>
+
+    <!-- Checkout button -->
+    <div class = "btn-right">
+    <button class="btn-checkout">
+        Checkout
+    </button>
+    </div>
+    <br><br>
+    </div>
+
+</body>
+</html>
