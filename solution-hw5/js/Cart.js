@@ -151,7 +151,7 @@ function updateTotalPrice() {
     let sum = 0;
     const price = document.querySelector('#cartTotalPrice');
     if (cartItems.size == 0) {
-        price.innerText = '$' + 0;
+        price.innerText = '$' + 0.00;
     } else {
         for (const roll of cartItems) {
             const priceLine = roll.element.querySelector('.flex-cart-price'); 
