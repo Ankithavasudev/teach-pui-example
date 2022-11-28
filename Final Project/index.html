@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Homepage Humanitarian Architecture -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleCommon.css">
+    
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.css>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
+
+    <script defer src="js/ProjectsData.js"></script>
+    <script defer src="js/Main.js"></script>
+    <title> Humanitarian Architecture </title>
+</head>
+
+<body>
+    <!-- 3 Title Images -->
+
+    <div class = "titleImages"> 
+        <div class = "ImgandText">
+            <img class="coverImg" src="assets/Cover-Image-1.png" alt="Housing Project in Thailand" style="width:100%"> 
+            <h1 class="caption1"> Humanitarian Architecture </h1>
+                <ul class = "caption2">
+                    <li> can change the world </li> 
+                    <li> encourages community </li> 
+                    <li> is sustainable </li> 
+                    <li> benefits us all </li>
+                    <li> is essential </li> 
+                </ul>
+            <a href = "learnmore.html" class=button> Learn More </a>
+        </div> 
+            <div class = "ImgandText">
+            <img class="coverImg" src="assets/Cover-Image-2.png" alt="Community Center in Bangladesh by Anna Heringer" style="width:100%">
+            <h1 class="caption1"> Humanitarian Architecture </h1>
+                <ul class = "caption2">
+                    <li> uses local resources </li>
+                    <li> benefits us all </li>
+                    <li> can change the world </li> 
+                    <li> is cultural </li>
+                    <li> is political </li>  
+                </ul>
+            <a href = "learnmore.html" class=button> Learn More </a>
+        </div>
+        <div class = "ImgandText">
+            <img class="coverImg" src="assets/Cover-Image-3.png" alt="Rwanda Institute for Conservation Agriculture (RICA) by MASS Design Group" style="width:100%">
+            <h1 class="caption1"> Humanitarian Architecture </h1>
+                <ul class = "caption2">
+                    <li> benefits us all </li> 
+                    <li> uses local resources </li>
+                    <li> encourages community </li> 
+                    <li> is sustainable </li>
+                    <li> can change the world </li> 
+                </ul>
+            <a href = "learnmore.html" class=button> Learn More </a>
+        </div>
+        <br>
+    </div>
+
+    <!-- Grey box with intro text -->
+    <div class="intro">
+        <h2 id="introText"> 
+            Humanitarian architecture has the potential to drive positive social change by improving humanitarian issues through architectural solutions.
+        </h2>
+    </div>
+
+    <!-- Tool intro -->
+    <div id="projectSpace">
+        <div class="toolText">
+            This tool is designed to give you an overview of the various 
+            humanitarian projects around the world. It is in no way 
+            exhaustive, but rather meant to serve as inspiration for 
+            designers who wish to drive positive social change.
+            <br><br>
+            It's time to "design like you give a damn."
+        </div>
+
+        <!-- SHELTER -->
+        <div class= "category" id="shelter">
+            <div class="categoryIntro">
+                <p class="categoryTitle">
+                    SHELTER
+                </p>
+                <p class="categoryText">
+                    The necessities of shelter and forced settlements have 
+                    become one of the world's biggest concerns, and the specialization 
+                    of the architectural profession <b>reacting to these needs is 
+                    the essence of Humanitarian Architecture</b>. 
+                </p>
+            </div>
+        <div class = contentFlex>
+            <div class = "contentLeft">
+                <div class="grid">
+                    <img onclick="displayShelter(1)" class="imageGrid" src="assets/Shelter_1.1.jpg" alt="Hex House">
+                    <img onclick="displayShelter(2)" class="imageGrid" src="assets/Shelter_2.1.jpg" alt="German Refugee Center">
+                    <img onclick="displayShelter(3)" class="imageGrid" src="assets/Shelter_3.1.jpg" alt="Quinta Monroy Housing">
+                </div>
+                <div class="grid">
+                    <img onclick="displayShelter(4)" class="imageGrid" src="assets/Shelter_4.1.jpg" alt="Post-Tsunami Rehabilitation Project, Kirinda">
+                    <img onclick="displayShelter(5)" class="imageGrid" src="assets/Shelter_5.1.jpg" alt="Rebuilding Ngarannam">
+                    <img onclick="displayShelter(6)" class="imageGrid" src="assets/Shelter_6.1.jpg" alt="Super Adobe">
+                </div>
+                <div class="grid">
+                    <img onclick="displayShelter(7)" class="imageGrid" src="assets/Shelter_7.1.jpg" alt="Jintai Village Reconstruction">
+                    <img onclick="displayShelter(8)" class="imageGrid" src="assets/Shelter_8.1.jpg" alt="Shelter for Migrants">
+                    <img onclick="displayShelter(9)" class="imageGrid" src="assets/Shelter_9.1.jpg" alt="Paper Log House">
+                </div>
+            </div>
+
+            <div class = "contentRight">
+                <p class="placeholderText"> Click on an image to learn more. </p>
+                <div id="projectName1"></div>
+                <div id="projectYear1"></div>
+                <div id="projectArchitect1"></div>
+                <div id="projectLocation1"></div>
+                <div id="projectDescription1"></div>
+                <div class="images">
+                    <img id="shelterImage1">
+                    <img id="shelterImage2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- COMMUNITY -->
+        <div class= "category" id="community">
+            <div class="categoryIntro">
+                <p class="categoryTitle">
+                    COMMUNITY
+                </p>
+                <p class="categoryText">
+                    Humanitarian Architecture has always acted as a 
+                    <b>catalyst to improve the well-being of communities </b>- 
+                    particulary those that are overlooked and underserved in society.
+                    These set of projects range from promoting opportunites for women 
+                    to providing spaces for learning to recreational amenities.
+                </p>
+            </div>
+            <div class = contentFlex>
+                <div class = "contentLeft">
+                    <div class="grid">
+                        <img onclick="displayCommunity(1)" class="imageGrid" src="assets/Community_1.1.jpg" alt="Glass Chapel">
+                        <img onclick="displayCommunity(2)" class="imageGrid" src="assets/Community_2.1.jpg" alt="Refisque Women's Centre">
+                        <img onclick="displayCommunity(3)" class="imageGrid" src="assets/Community_3.1.jpg" alt="Gando Primary School">
+                    </div>
+                    <div class="grid">
+                        <img onclick="displayCommunity(4)" class="imageGrid" src="assets/Community_4.1.jpg" alt="Druk White Lotus School">
+                        <img onclick="displayCommunity(5)" class="imageGrid" src="assets/Community_5.1.jpg" alt="Favela-Bairro Projects">
+                        <img onclick="displayCommunity(6)" class="imageGrid" src="assets/Community_6.1.jpg" alt="Centre Pour Le Bien-Etre Des Femmes (CBF)">
+                    </div>
+                    <div class="grid">
+                        <img onclick="displayCommunity(7)" class="imageGrid" src="assets/Community_7.1.jpg" alt="Tiuna El Fuerte Cultural Park">
+                        <img onclick="displayCommunity(8)" class="imageGrid" src="assets/Community_8.1.jpg" alt="Mahiga Hope High School Rainwater Court">
+                        <img onclick="displayCommunity(9)" class="imageGrid" src="assets/Community_9.1.jpg" alt="Gimnasio Vertical">
+                    </div>
+                </div>
+    
+                <div class = "contentRight">
+                    <p class="placeholderText2"> Click on an image to learn more. </p>
+                    <div id="projectName2"></div>
+                    <div id="projectYear2"></div>
+                    <div id="projectArchitect2"></div>
+                    <div id="projectLocation2"></div>
+                    <div id="projectDescription2"></div>
+                    <!-- photo -->
+                    <div class="images">
+                        <img id="communityImage1">
+                        <img id="communityImage2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- WATER -->
+        <div class= "category" id="water">
+            <div class="categoryIntro">
+                <p class="categoryTitle">
+                    WATER, ENERGY AND SANITATION
+                </p>
+                <p class="categoryText">
+                    The need for water and energy is a fundamental one. Humanitarian
+                    Architecture <b> can link entire societies to a better life by providing 
+                    for these needs </b>. These projects showcase just a small set of solutions 
+                    that cater to the problems surrounding water and energy scarcity.
+                </p>
+            </div>
+            <div class = contentFlex>
+                <div class = "contentLeft">
+                    <div class="grid">
+                        <img onclick="displayWater(1)" class="imageGrid" src="assets/Water_1.1.jpg" alt="Ventilated Improved Pit Latrine">
+                        <img onclick="displayWater(2)" class="imageGrid" src="assets/Water_2.1.jpg" alt="Hippo Water Roller">
+                        <img onclick="displayWater(3)" class="imageGrid" src="assets/Water_3.1.jpg" alt="Watercone">
+                    </div>
+                    <div class="grid">
+                        <img onclick="displayWater(4)" class="imageGrid" src="assets/Water_4.1.jpg" alt="MoneyMaker Pumps">
+                        <img onclick="displayWater(5)" class="imageGrid" src="assets/Water_5.1.jpg" alt="Clean Hub">
+                        <img onclick="displayWater(6)" class="imageGrid" src="assets/Water_6.1.jpg" alt="Seba Dalkai Solar Classroom">
+                    </div>
+                </div>
+    
+                <div class = "contentRight">
+                    <p class="placeholderText3"> Click on an image to learn more. </p>
+                    <div id="projectName3"></div>
+                    <div id="projectYear3"></div>
+                    <div id="projectArchitect3"></div>
+                    <div id="projectLocation3"></div>
+                    <div id="projectDescription3"></div>
+                    <!-- photo -->
+                    <div class="images">
+                        <img id="waterImage1">
+                        <img id="waterImage2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- POLITICS -->
+        <div class= "category" id="politics">
+            <div class="categoryIntro">
+                <p class="categoryTitle">
+                    POLITICS, POLICY AND PLANNING
+                </p>
+                <p class="categoryText">
+                    <b>Architecture is an inherently political act</b>, 
+                    which is precisely why it is so contested. These projects are examples
+                    of how powerful architecture can be when it (re)constructs communities 
+                    in a significant way and positively affects the politics and planning of a region.
+                </p>
+            </div>
+            <div class = contentFlex>
+                <div class = "contentLeft">
+                    <div class="grid">
+                        <img onclick="displayPolitics(1)" class="imageGrid" src="assets/Politics_1.1.jpg" alt="Favela Painting Project">
+                        <img onclick="displayPolitics(2)" class="imageGrid" src="assets/Politics_2.1.jpg" alt="In-Site Slum Rehabilitation">
+                        <img onclick="displayPolitics(3)" class="imageGrid" src="assets/Politics_3.1.jpg" alt="Let's Do It! Estonia">
+                    </div>
+                    <div class="grid">
+                        <img onclick="displayPolitics(4)" class="imageGrid" src="assets/Politics_4.1.jpg" alt="Fresh Moves Mobile Market">
+                        <img onclick="displayPolitics(5)" class="imageGrid" src="assets/Politics_5.1.jpg" alt="Violence Prevention through Urban Upgrading, Cape Town">
+                        <img onclick="displayPolitics(6)" class="imageGrid" src="assets/Politics_6.1.jpg" alt="Trau Kod Dam">
+                    </div>
+                </div>
+    
+                <div class = "contentRight">
+                    <p class="placeholderText4"> Click on an image to learn more. </p>
+                    <div id="projectName4"></div>
+                    <div id="projectYear4"></div>
+                    <div id="projectArchitect4"></div>
+                    <div id="projectLocation4"></div>
+                    <div id="projectDescription4"></div>
+                    <!-- photo -->
+                    <div class="images">
+                        <img id="politicsImage1">
+                        <img id="politicsImage2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="emailForm">
+        <h3 id = "formCaption"> Interested in learning more? </h3>
+        <p id = "formText"> Sign up to stay updated on architectural humanitarian stories around the world </p>
+        
+        <form action="/action_page.php">
+            <!-- <label for="fname">First name:</label><br> -->
+            <div id="inputBoxes">
+                <input type="text" id="fname" name="fname" value="First Name*"><br>
+                <!-- <label for="lname">Last name:</label><br> -->
+                <input type="text" id="lname" name="lname" value="Last Name*"><br>
+                <input type="text" id="email" name="email" value="Email Address*"><br><br><br><br>
+            </div>
+            <input id="submit" type="submit" value="Join our community">
+          </form> 
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Learn More -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/styleCommon.css">
+    
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.css>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
+
+    <script defer src="js/Learnmore.js"></script>
+    <title> Learn More </title>
+</head>
+
+<body>
+
+    <div class="imageSection">
+        <div class= "ImgandText">
+            <img id="coverImage" src="assets/Learnmore_coverimg.jpg" alt="Renacer de Chamanga Community House, Acuetemos Ecuador" style="width:100%">  
+            <h1 class="caption1"> Building Change </h1>
+            <h1 class="caption2"> from the Ground Up </h1>
+            <a href = "index.html" class=button> View Projects </a>
+        </div>
+    </div>
+    <br><br>
+
+    <h1 id="counterHeading"> Global Awareness Impact </h1>
+    <div class="counterSection">
+        <div id = "counterLeft">
+            <div class="topCount">
+                <img class="icon" src="assets/House.svg" alt="House with exclamation mark icon">
+                <div class="stats">
+                    <div id="counter1"> 
+                        <!-- 150,000,000 -->
+                    </div>
+                    <h4> people are homeless worldwide </h4>
+                </div>
+            </div>
+            <br><br>
+            <div class="topCount">
+                <img class="icon" src="assets/Hand water.svg" alt="Hand holding water droplet icon">
+                <div class="stats">
+                    <div id="counter2"> 
+                        <!-- 1,700,000,000 -->
+                    </div>
+                    <h4> people lack access to clean water </h4>
+                </div>
+            </div>
+        </div>
+        <div id = "counterLeft">
+            <div class="topCount">
+                <img class="icon" src="assets/people.svg" alt="3 People icon">
+                <div class="stats">
+                    <div id="counter3"> 
+                        1/29
+                    </div>
+                    <h4> people will need humanitarian assistance in 2023</h4>
+                </div>
+            </div>
+            <br><br>
+            <div class="topCount">
+                <img class="icon" src="assets/earth.svg" alt="globe icon">
+                <div class="stats">
+                    <div id="counter4"> 
+                        <!-- 69 -->
+                    </div>
+                    <h4> countries are currently facing humanitarian crises </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="News">
+        <h1 id="newsHeading"> In The News </h1>
+        <div class = "row">
+            <div class="column">
+                <div class="card">
+                        <img class="newsImg" src="assets/News1.jpg" alt="globe icon" style="width:100%">
+                        <h5> Kéré Architecture designs community centre in Uganda</h5>
+                        <p> Transforming a community through agency and ownership... </p>
+                        <button class="readStory"> Read Story </button> 
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img class="newsImg" src="assets/News3.jpg" alt="Subway Station serves as a shelter for thousands of people during a rocket and bomb attack" style="width:100%">
+                    <h5> Aga Khan Award for Architecture 2022 puts the spotlight on the community </h5>
+                    <p> The winners extend an architectural responsibility toward communities and environment...</p>
+                    <button class="readStory"> Read Story </button> 
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img class="newsImg" src="assets/News2.jpg" alt="School in Nigeria by Erik Jan Ouwerkerk" style="width:100%">
+                    <h5> Architects Stepping Up in Humanitarian Crisis </h5>
+                    <p> The role of architects in creating safe and adequate environments... </p>
+                    <button class="readStory"> Read Story </button> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- add quote w/ textillate  -->
+
+    <div id="emailForm">
+        <h3 id = "formCaption"> Interested in learning more? </h3>
+        <p id = "formText"> Sign up to stay updated on architectural humanitarian stories around the world </p>
+        
+        <form action="/action_page.php">
+            <!-- <label for="fname">First name:</label><br> -->
+            <div id="inputBoxes">
+                <input type="text" id="fname" name="fname" value="First Name*"><br>
+                <!-- <label for="lname">Last name:</label><br> -->
+                <input type="text" id="lname" name="lname" value="Last Name*"><br>
+                <input type="text" id="email" name="email" value="Email Address*"><br><br><br><br>
+            </div>
+            <input id="submit" type="submit" value="Join our community">
+          </form> 
+    
+    </div>
+
+
+</body>
+
+
+</html>

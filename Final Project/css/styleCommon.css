@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+#emailForm {
+    background-color: #6B2E12;
+    text-align: center;
+    width: 100%;
+}
+
+#formCaption {
+    color: orange;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+#formText {
+    color: white;
+}
+
+#inputBoxes {
+    justify-content: center;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+#submit {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: orange;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+/* more than 900px */
+@media screen and (min-width: 600px) {
+
+    #inputBoxes {
+        display: flex;
+        justify-content: center;
+        height: 30px;
+        gap: 5px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+
+/* less than 600px */
+@media screen and (max-width: 600px) {
+
+    #inputBoxes {
+        justify-content: center;
+        height: 30px;
+        gap: 5px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
