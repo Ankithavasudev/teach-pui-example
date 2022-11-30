@@ -1,0 +1,79 @@
+/* Styling for Footer input form (same for both pages) */
+
+* {
+    box-sizing: border-box;
+}
+
+#emailForm {
+    background-color: #6B2E12;
+    text-align: center;
+    width: 100%;
+}
+
+#formCaption {
+    color: orange;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+#formText {
+    color: white;
+    padding: 10px;
+}
+
+#inputBoxes {
+    justify-content: center;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+#submit {
+    margin-bottom: 30px;
+    background-color: darkorange;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    color: black;
+}
+
+label {
+    text-align: left;
+    color: white;
+    margin-bottom: 5px;
+}
+
+/* Styling for screen more than 900px */
+@media screen and (min-width: 600px) {
+
+    #inputBoxes {
+        display: flex;
+        height: 30px;
+        gap: 5px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    #boxColumn {
+        text-align: left;
+    }
+
+    #submit {
+        margin-top: 30px;
+    }
+}
+
+/* Styling for screen less than 600px */
+@media screen and (max-width: 600px) {
+
+    #inputBoxes {
+        justify-content: center;
+        height: 30px;
+        gap: 5px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    #submit {
+        margin-top: 150px;
+    }
+}
