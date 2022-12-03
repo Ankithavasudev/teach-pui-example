@@ -1,0 +1,385 @@
+/* CSS Styling for Main Page */
+
+/* common styling for all screen sizes */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0px;
+    background-color: #FDF9F6;
+    padding: 0px;
+}
+
+.titleImages{
+    margin: 0px;
+}
+
+.ImgandText {
+    position: relative;
+    text-align: center;
+    color:#ffffff;
+    width: 100%;
+    margin-bottom: -20px;
+    padding: 0;
+}
+
+.coverImg {
+    width: 100%;
+}
+
+ul {
+    margin-top:25px;
+}
+
+.caption1, .caption2 {
+    position: absolute;
+    font-weight: bold;
+}
+
+.topButton {
+    position: absolute;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    border: white;
+    border-style: solid;
+}
+
+.topButton:hover {
+    opacity: 1;
+    background: white;
+    color: black;
+}
+
+.intro {
+    background-color: #403E3E;
+    width:100%;
+    margin: 0px;
+}
+
+#introText {
+    text-align: center;
+    padding: 50px 25px 50px 25px;
+    line-height: 1.2;
+    color: white;
+}
+
+h2 {
+    margin: 0px;
+}
+
+.category {
+    margin-bottom: 150px;
+}
+
+.imageGrid:hover {
+    opacity: 0.3;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.categoryTitle {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #CF5C36;
+}
+
+.categoryText {
+    font-size: 18px;
+}
+
+.placeholderText, .placeholderText2, .placeholderText3, .placeholderText4 {
+    font-size: 20px;
+}
+
+#projectName1, #projectName2, #projectName3, #projectName4 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#projectYear1, #projectArchitect1, #projectLocation1, #projectYear2, #projectArchitect2, #projectLocation2, #projectYear3, #projectArchitect3, #projectLocation3, #projectYear4, #projectArchitect4, #projectLocation4 {
+    font-size: 19px;
+}
+
+#projectDescription1, #projectDescription2, #projectDescription3, #projectDescription4 {
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+#shelterImage1 { 
+    margin-bottom: 5px;
+}
+
+#shelterImage2 { 
+    margin-bottom: 5px;
+} 
+
+.gridButton {
+    margin: 2px;
+}
+
+/* Styling for screens more than 900px */
+@media screen and (min-width: 900px) {
+
+    .topButton {
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        padding: 13px 30px;
+        font-size: 18px;
+        border-width: 3px;
+    }
+
+    .caption1 {
+        width: 100%;
+        top: 28%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        font-size: 48px;
+    }
+
+    .caption2 {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        font-size: 48px;
+        width: 100%;
+    }
+
+    #introText {
+        font-size: 40px;
+    }
+
+    .toolText {
+        width: 40%;
+        font-size: 18px;
+        margin-bottom: 100px;
+    }
+
+    #projectSpace {
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+
+    .categoryIntro{
+        width: 40%;
+        margin-bottom: 50px;
+    }
+
+    .contentFlex {
+        display: flex;
+        gap: 60px;
+    }
+
+    .contentLeft{
+        flex-basis: 40%;
+    }
+        
+    .contentRight{
+        flex-basis: 45%;
+    }
+
+    .grid {
+        display: flex;
+        height: 130px;
+    }
+
+    .imageGrid {
+        opacity: 1;
+        width: 150px;
+        height: 100%;
+        margin: 0px;
+        flex-grow: 1;
+    }
+
+    .gridButton {
+        width: 150px;
+        padding: 0px;
+        border: none;
+    }
+
+    .images {
+        display: flex;
+        width: 50%;
+        gap: 10px;
+    }
+}
+
+/* Styling for screens between 600 and 800px */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+
+    .images {
+        display: flex;
+        width: 50%;
+        gap: 10px;
+    }
+
+    .caption1 {
+        width: 100%;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        font-size: 32px;
+    }
+
+    .caption2 {
+        width: 100%;
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        font-size: 32px;
+    }
+
+    .topButton {
+        top: 57%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        padding: 8px 16px;
+        font-size: 16px;
+        border-width: 2px;
+    }
+
+    #introText {
+        font-size: 28px;
+    }
+
+    .toolText {
+        font-size: 18px;
+        margin-bottom: 100px;
+    }
+    
+    #projectSpace {
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .categoryIntro {
+        margin-bottom: 50px;
+    }  
+
+    .contentLeft {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .contentRight {
+        width: 100%;
+        padding-right: 20px;
+    }
+
+    .grid {
+        display: flex;
+        margin: auto;
+        /* width: 100%; */
+    }
+
+    .imageGrid {
+        opacity: 1;
+        width: 100%;
+        flex-grow: 1;
+        height: 100%;
+        margin: 0px;
+    }
+
+    .gridButton {
+        width: 33%;
+        padding: 0px;
+        border: none;
+    }
+}
+
+/* Styling for screens less than 600px */
+@media screen and (max-width: 599.9px) {
+
+    .images {
+    width: 100%;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    }
+
+    .caption1 {
+        width: 100%;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        font-size: 20px;
+    }
+
+    .caption2 {
+        width: 100%;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        font-size: 20px;
+    }
+
+    .topButton {
+        top: 57%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        padding: 8px 16px;
+        font-size: 12px;
+        border-width: 2px;
+    }
+
+    #introText {
+        font-size: 32px;
+    }
+
+    .toolText {
+        font-size: 18px;
+        margin-bottom: 100px;
+    }
+    
+    #projectSpace {
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .categoryIntro {
+        margin-bottom: 50px;
+    }  
+
+    .contentLeft {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .contentRight {
+        width: 100%;
+        padding-right: 20px;
+    }
+
+    .grid {
+        display: flex;
+        margin: auto;
+        /* width: 100%; */
+    }
+
+    .imageGrid {
+        opacity: 1;
+        width: 100%;
+        flex-grow: 1;
+        height: 100%;
+        margin: 0px;
+    }
+
+    .gridButton {
+        width: 33%;
+        padding: 0px;
+        border: none;
+    }
+}
+
+
+
